@@ -20,11 +20,14 @@ jQuery(document).ready ($) ->
           $('.navbar-custom').addClass 'is-fixed'
       @previousTop = currentTop
       return
+  return
 
+ready = ->
   switch window.location.pathname
     when "/about" then $(".intro-header").addClass("team-image")
     when "/" then $(".intro-header").addClass("home-image")
     when "/product" then $(".intro-header").addClass("product-image")
     else Console.log("unknown page. Could not add background image.")
-
   return
+$(document).ready(ready)
+$(document).on('page:load', ready)

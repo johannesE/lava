@@ -8,6 +8,8 @@ gem 'coffee-rails', '~> 4.1.0'
 gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
+gem 'puma'
+gem 'shelly-dependencies'
 group :development, :test do
   gem 'byebug'
 end
@@ -39,8 +41,6 @@ group :development, :test do
   gem 'faker'
   gem 'rspec-rails'
 end
-gem "shelly-dependencies", :group => :production
-
 group :test do
   gem 'capybara'
   gem 'database_cleaner'

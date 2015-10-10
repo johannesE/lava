@@ -40,7 +40,8 @@ group :development, :test do
   gem 'rspec-rails'
 end
 group :production do
-  gem 'passenger'
+  gem 'thin'
+  gem 'shelly-dependencies'
 end
 group :test do
   gem 'capybara'

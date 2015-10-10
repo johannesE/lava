@@ -11,6 +11,9 @@ gem 'jbuilder', '~> 2.0'
 gem 'puma'
 gem 'shelly-dependencies'
 gem 'devise'
+gem 'redcarpet' #markdown
+
+
 group :development, :test do
   gem 'byebug'
 end

@@ -39,10 +39,8 @@ group :development, :test do
   gem 'faker'
   gem 'rspec-rails'
 end
-group :production do
-  gem 'thin'
-  gem 'shelly-dependencies'
-end
+gem "shelly-dependencies", :group => :production
+
 group :test do
   gem 'capybara'
   gem 'database_cleaner'

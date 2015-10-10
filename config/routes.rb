@@ -4,4 +4,5 @@ Rails.application.routes.draw do
   devise_for :founders
   get 'about', to: 'pages#about'
   get 'product', to: 'pages#product'
+  get 'admin_area', to: 'pages#admin'
 end

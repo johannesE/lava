@@ -10,12 +10,14 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'puma'
 gem 'shelly-dependencies'
+gem 'devise'
 group :development, :test do
   gem 'byebug'
 end
 group :development do
   gem 'web-console', '~> 2.0'
   gem 'spring'
+  gem 'letter_opener'
 end
 gem 'bootstrap-sass'
 gem 'haml-rails'

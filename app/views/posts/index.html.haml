@@ -1,0 +1,19 @@
+%h1.text-center Blog
+
+.container
+  - @posts.each do |post|
+    .row
+      .col-lg-8.col-lg-offset-2.col-md-10.col-md-offset-1
+        .post-preview
+          = link_to post do
+            %h2
+              = post.title
+            %h4
+              = truncate post.body, length: 300
+            %p
+              Posted by
+              = post.author.username #TODO: Add link to all the user's posts
+              on
+              = post.created_at.localtime
+.text-right
+  = link_to 'New Post', new_post_path, class: 'btn'
